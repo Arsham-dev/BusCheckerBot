@@ -1,0 +1,31 @@
+export type Ticket = {
+  ID: number
+  IsVip: boolean
+  BusType: string
+  Price: number
+  MidwayCity: string
+  MidwayCityCode: string
+  MidwayEnglishName: string
+  CompanyCode: string
+  OriginTerminalName: string
+  OriginTerminalPersianName: string
+  OriginTerminalCode: string
+  DestinationTerminalPersianName: string
+  DestinationTerminalName: string
+  DestinationTerminalCode: string
+  CompanyName: string
+  CompanyPersianName: string
+  DepartureTime: string
+  DepartureDate: string
+  Description: string
+  BriefDescription: any
+  DestinationCode: string
+  AvailableSeatCount: number
+  DiscountPercentage: number
+  CompanyLogo: string
+  CompanyId: number
+  CompanyUrl: string
+  OriginTerminalUrl: string
+  DestinationTerminalUrl: string
+  Status: number
+}
