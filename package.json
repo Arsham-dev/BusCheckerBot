@@ -5,7 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "test": "test",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "start": "node build/index.js",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
