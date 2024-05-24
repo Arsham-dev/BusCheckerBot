@@ -5,7 +5,7 @@ import MenuButtons from '../buttons/menu'
 const start = async (bot: Bot) => {
   bot.start((ctx) => {
     ctx
-      .reply('Welcome to the bot!', Markup.keyboard(MenuButtons))
+      .reply('Welcome to the bot!', Markup.keyboard(MenuButtons).resize())
       .catch((err) => console.error(err))
   })
 }

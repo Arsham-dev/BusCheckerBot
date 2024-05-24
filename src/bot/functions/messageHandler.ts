@@ -18,7 +18,7 @@ const messageHandler = (bot: Bot) => {
 
     await ctx.reply(
       tickets,
-      Markup.keyboard(MenuButtons)
+      Markup.keyboard(MenuButtons).resize()
     )
   })
 
@@ -36,7 +36,7 @@ const messageHandler = (bot: Bot) => {
 
     await ctx.reply(
       tickets,
-      Markup.keyboard(MenuButtons)
+      Markup.keyboard(MenuButtons).resize()
     )
   })
 
@@ -54,7 +54,7 @@ const messageHandler = (bot: Bot) => {
 
     await ctx.reply(
       tickets,
-      Markup.keyboard(MenuButtons)
+      Markup.keyboard(MenuButtons).resize()
     )
   })
 }
