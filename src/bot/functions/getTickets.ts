@@ -8,6 +8,10 @@ const getTickets = async (date:string):Promise<string> => {
   const tickets = [...hashtparTickets.Items.filter((ticket) => ticket.AvailableSeatCount > 0),
     ...astaraTickets.Items.filter((ticket) => ticket.AvailableSeatCount > 0)]
 
+  if (tickets.length === 0) {
+    return 'No tickets available for this date.'
+  }
+
   const data = tickets.map((ticket) => [
     `🕒 Time: ${ticket.DepartureTime}`,
     `🚉 From: ${ticket.OriginTerminalName}`,
